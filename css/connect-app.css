@@ -1,0 +1,275 @@
+body {padding: 0; margin: 0; font-family: 'Open Sans', 'Futura Bold', helvetica, arial, "arial narrow", arial;}
+html, body {height: 100%;}
+h1, h2, h3 {font-family: 'Open Sans', 'Futura Bold', helvetica, arial, "arial narrow", arial; font-weight:700;}
+h2 {font-size: 24px; margin: 10px 10px 0px; color: #fff; padding: 3px 5px; display: inline-block; background: #fc47dc; /*transform: rotate(-2deg);*/ }
+p, ul, ol {color: #3d3d3d; font-size: 1.2em; line-height: 1.5em; margin-bottom: 20px;}
+
+a {color: #47d4fc; text-decoration: none}
+a:hover {border-bottom: 1px solid #47d4fc;}
+
+
+#header_nav {height: 50px; position: absolute; width: 100%; height: 0px;}
+.navbar-default {background: #000; color: #fff; border-bottom: 0;}
+.navbar-right {margin-right: 0;}
+.navbar-default .navbar-brand {text-transform: uppercase; color: #fff; font-style: italic; font-size: 1.5em;}
+.navbar-default .navbar-nav li a { color: #fff; font-size: 0.9em;}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {background: yellow;
+            color: #000; margin: 10px 0 5px; padding: 5px; border-radius: 3px;}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>a:hover {background: yellow;
+            color: #000; margin: 10px 0 5px; padding: 5px; border-radius: 3px;}
+
+/*ul.list-inline {color: #fff; margin: 10px;}*/
+#legend {margin: 5px 5px 5px 100px; color: #fff !important; float: right; padding-top: 12px; /*text-transform: uppercase;*/ font-size: 14px;}
+ul#legend2.list {margin-left: 0; padding-left: 0; margin-bottom: 0; padding-bottom: 0;}
+ul#legend2 li {list-style: none; color: black;}
+ul.list-group {list-style: none; margin: 0; padding: 0;}
+
+/*.nav {height:34px; position:fixed; top:0; left:0; background-color:#6699ff; opacity:0;}
+.visible {opacity:1;}
+.nav a {display:block; font-size:14px; line-height:14px; float:left; padding:10px;}*/
+
+
+/* HOME ------------------------------- */
+#home {width: 100%; height: 100%; background: #000;}
+
+#home p {color: #fff; font-size: 1.3em; /*text-shadow: 3px 3px #000;*/ }
+/*#home p {color: #fff; font-family: lato, "ff-tisa-sans-web-pro"; font-size: 1.4em; text-shadow: 3px 3px #000; background: yellow;
+        color: #000; display: inline; line-height: 1.8em;}     */   
+#map-home {width: 100%; height: 100vh; background: #fff;}
+#map-home #content {position: absolute; left: 60px; bottom: 60px; z-index: 999; color: #fff; /*transform: rotate(-3deg);*/}
+.flow-canvas {position: absolute; z-index: 9999;}
+#home-layer-switcher { /*text-transform: uppercase;*/ color: #fff; position: absolute; right: 10px; bottom: 20px; z-index: 999; 
+                       background: #fff; border-radius: 5px;}
+
+#home .leaflet-container li.active a {color: #fff;}
+.list-group-item {font-size: 14px; padding: 5px 8px; color: #000;}
+/*.list-group-item.active {background: #f0f0f0; background: #fff; border: #fc47dc; color: #000; text-decoration: none;}*/
+
+.list-inline>li {margin-right: 10px;}
+
+#map-menu{
+  width:200px;
+  max-width:30%;  
+  position:absolute;
+  z-index:999;
+  left:15px;
+  bottom:15px;
+  overflow: wrap;
+  background:rgba(0,0,0,0.5);
+  border:1px solid #fff;
+  border-radius:5px;
+  padding:10px;
+  color:white;
+  font-family:verdana,arial;
+}
+
+/*.unslider-wrap.unslider-carousel li {max-height: 340px; overflow-y: scroll;}*/
+
+/* ACCORDION */
+
+/* Customize the label (the container) */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 1px;
+  cursor: pointer;
+  font-size: 12px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+}
+
+span.uram{
+  background-color: #fcfa47;
+}
+
+span.plci{
+  background-color: #ffa640;
+}
+
+span.rasy{
+  background-color: #88ff90;
+}
+span.blbr{
+  background-color: #ff2d3f;
+}
+span.maam{
+  background-color: #ff2df5;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  /*background-color: #ccc;*/
+}
+
+/* When the checkbox is checked, add a blue background */
+/*.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}*/
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 4px;
+  top: 3px;
+  width: 5px;
+  height: 7px;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+.spinner {
+  width: 5px;
+  height: 5px;
+
+  position: absolute;
+  margin: 5px auto auto 5px;
+  display:none;
+}
+
+
+#loading{
+  position:absolute;
+  left:50%;
+  top:50%;
+  margin:auto;
+  z-index:999;
+}
+
+.spinnershow{
+  display:inline;
+}
+
+.double-bounce1, .double-bounce2 {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.8;
+  
+  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+  animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+  margin-top:-8px;
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+#loading .huge .double-bounce1, #loading .huge .double-bounce2 {
+  width: 50px;
+  height: 50px;
+}
+
+.message h2{
+    background: none !important;
+    font-size: 32px;
+    color: #5d5d5d;
+    padding-left:0px;
+    margin-left:0px;
+}
+
+
+.message a{
+    border:0px white !important;
+}
+
+.message em{
+    font-weight:normal;
+    font-style:italic;
+}
+
+.closebut{
+    background: white;
+    border: 1px solid #47d4fc;
+    padding: 20px;
+    font-size: 20px;
+    color: #47d4fc;
+}
+
+.closebut:hover{
+    background: #47d4fc;
+    color:white;
+}
+
+#about{
+  color:#ffffff;
+  font-weight:bolder;
+  text-decoration:underline;
+  cursor: pointer;
+}
+
+.fancybox-slide .fancybox-content {
+    max-width  : 1200px;
+    margin: auto;
+}
+
+@-webkit-keyframes sk-bounce {
+  0%, 100% { -webkit-transform: scale(0.0) }
+  50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bounce {
+  0%, 100% { 
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% { 
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+
+
+
+
+/* RESPONSIVE BREAKPOINTS --------------- */
+/*@media (max-width:767px) {
+  #map-home {height: 90vh;}
+}*/
+
+@media(max-width:768px) {
+  #viz-meta h1 {font-size: 30px !important;}
+  h2 {font-size: 18px; padding: 2px 3px;}
+  p {font-size: 14px !important;}
+ 
+}
+
+@media(min-width:992px) {
+p {font-size: 1.3em;}
+}
+
+
